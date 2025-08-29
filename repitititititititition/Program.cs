@@ -14,8 +14,8 @@ while (hp1 > 0 && hp2 > 0)
     Console.WriteLine($"{name2} hp:{hp2}");
     dmg1 = Random.Shared.Next(10, 25);
     dmg2 = Random.Shared.Next(10, 25);
-    hp2 -= dmg1
-    hp1 -= dmg2
+    hp2 -= dmg1;
+    hp1 -= dmg2;
     Console.WriteLine($"{name1} did {dmg1} damage");
     Console.WriteLine($"{name2} did {dmg2} damage");
     Console.ReadLine();
