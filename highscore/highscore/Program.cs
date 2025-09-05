@@ -1,0 +1,36 @@
+﻿List/*mellanslag*/</*mellanslag*/string/*mellanslag*/>/*mellanslag*/names/*mellanslag*/=/*mellanslag*/[/*mellanslag*/]/*mellanslag*/;
+List/*mellanslag*/</*mellanslag*/int/*mellanslag*/>/*mellanslag*/points/*mellanslag*/=/*mellanslag*/[/*mellanslag*/]/*mellanslag*/;
+bool/*mellanslag*/pointIsNumber/*mellanslag*/=/*mellanslag*/false/*mellanslag*/;
+Console/*mellanslag*/./*mellanslag*/WriteLine/*mellanslag*/(/*mellanslag*/"/*mellanslag*/name/*mellanslag*/of/*mellanslag*/player/*mellanslag*/"/*mellanslag*/)/*mellanslag*/;
+string/*mellanslag*/name/*mellanslag*/=/*mellanslag*/Console/*mellanslag*/./*mellanslag*/ReadLine/*mellanslag*/(/*mellanslag*/)/*mellanslag*/;
+int/*mellanslag*/point/*mellanslag*/=/*mellanslag*/0;
+names.Add/*mellanslag*/(name);
+for/*mellanslag*/(int/*mellanslag*/i/*mellanslag*/=/*mellanslag*/0;/*mellanslag*/i/*mellanslag*/</*mellanslag*/3;/*mellanslag*/i++)
+{
+
+    /*tab*/
+    while/*mellanslag*/(/*mellanslag*/pointIsNumber/*mellanslag*/==/*mellanslag*/false)
+    /*tab*/
+    {
+        /*tab*//*tab*/
+        Console/*mellanslag*/./*mellanslag*/WriteLine/*mellanslag*/("score/*mellanslag*/of/*mellanslag*/player/*mellanslag*/(/*mellanslag*/in/*mellanslag*/numbers/*mellanslag*/)/*mellanslag*/")/*mellanslag*/;
+        /*tab*//*tab*/
+        string/*mellanslag*/score/*mellanslag*/=/*mellanslag*/Console/*mellanslag*/./*mellanslag*/ReadLine()/*mellanslag*/;
+        /*tab*//*tab*/
+        pointIsNumber/*mellanslag*/=/*mellanslag*/int/*mellanslag*/./*mellanslag*/TryParse(score,/*mellanslag*/out/*mellanslag*/point)/*mellanslag*/;
+        /*tab*//*tab*/
+        if/*mellanslag*/(pointIsNumber/*mellanslag*/==/*mellanslag*/false)/*mellanslag*/Console.WriteLine("IN/*mellanslag*/NUMBERS/*mellanslag*/IT/*mellanslag*/IS/*mellanslag*/A/*mellanslag*/FUCKING/*mellanslag*/INT/*mellanslag*/NOT/*mellanslag*/A/*mellanslag*/STRING")/*mellanslag*/;
+        /*tab*/
+    }
+    /*tab*/
+    points/*mellanslag*/./*mellanslag*/Add/*mellanslag*/(point)/*mellanslag*/;
+    /*tab*/
+    for/*mellanslag*/(int/*mellanslag*/e/*mellanslag*/=/*mellanslag*/0/*mellanslag*/;/*mellanslag*/e/*mellanslag*/</*mellanslag*/names/*mellanslag*/./*mellanslag*/Count/*mellanslag*/;/*mellanslag*/e++/*mellanslag*/)
+    /*tab*/
+    {
+        /*tab*//*tab*/
+        Console/*mellanslag*/./*mellanslag*/WriteLine/*mellanslag*/(/*mellanslag*/names/*mellanslag*/[/*mellanslag*/e/*mellanslag*/]/*mellanslag*/+/*mellanslag*/"/*mellanslag*/:/*mellanslag*/"/*mellanslag*/+/*mellanslag*/points/*mellanslag*/[/*mellanslag*/e/*mellanslag*/]/*mellanslag*/)/*mellanslag*/;
+        /*tab*/
+    }
+}
+Console/*mellanslag*/./*mellanslag*/ReadLine/*mellanslag*/(/*mellanslag*/)/*mellanslag*/;
